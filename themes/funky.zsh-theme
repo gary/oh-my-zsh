@@ -4,7 +4,7 @@
 local blue_op="%{$fg[blue]%}[%{$reset_color%}"
 local blue_cp="%{$fg[blue]%}]%{$reset_color%}"
 local path_p="${blue_op}%~${blue_cp}"
-local user_host="${blue_op}%n@%m${blue_cp}"
+local user_host="${blue_op}%{$fg[yellow]%n@%m${blue_cp}"
 local ret_status="${blue_op}%?${blue_cp}"
 local hist_no="${blue_op}%h${blue_cp}"
 local smiley="%(?,%{$fg[green]%}:%)%{$reset_color%},%{$fg[red]%}:(%{$reset_color%})"
