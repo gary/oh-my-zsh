@@ -15,6 +15,9 @@ setopt AUTO_CD
 setopt MULTIOS
 setopt CDABLEVARS
 
+# Finding stuff.
+setopt EXTENDEDGLOB
+
 bindkey -v
 bindkey "^R" history-incremental-search-backward
 
