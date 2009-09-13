@@ -1,5 +1,21 @@
-alias pu='pushd'
+alias dirs='dirs -v'
+
+alias pd='pushd'
 alias po='popd'
+alias cdu='cd ..'
+for ((n = 2; n < 10; n++))
+do
+    alias pd$n="pushd +$n"
+    alias po$n="popd +$n"
+    i=1
+    parentdir=../
+    until [ "$i" -eq "$n" ]
+    do
+        parentdir="${parentdir}../"
+        i=$(expr $i + 1)
+    done
+    alias cdu$n="cd $parentdir"
+done
 
 alias sc='ruby script/console'
 alias sd='ruby script/server --debugger'
