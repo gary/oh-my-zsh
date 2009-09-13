@@ -41,8 +41,11 @@ alias gba='git branch -a'
 
 alias history='fc -l 1'
 
-alias ls='ls -F'
-alias ll='ls -al'
+if [ ! -e ~/.profile_local ]; then alias ls='ls -F'; fi
+alias ll='ls -l'
+alias lt='ll -t'
+alias la='ll -a'
+alias l='ll | $PAGER'
 
 alias sgem='sudo gem'
 
