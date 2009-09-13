@@ -47,6 +47,8 @@ alias lt='ll -t'
 alias la='ll -a'
 alias l='ll | $PAGER'
 
+alias rl='readlink'
+
 alias sgem='sudo gem'
 
 alias rfind='find . -name *.rb | xargs grep -n'
