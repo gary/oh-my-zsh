@@ -10,7 +10,7 @@ setopt AUTO_NAME_DIRS
 
 # Speed stuff.
 
-#setopt NO_BEEP
+setopt NO_BEEP
 setopt AUTO_CD
 setopt MULTIOS
 setopt CDABLEVARS
