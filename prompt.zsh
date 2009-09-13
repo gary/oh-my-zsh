@@ -1,4 +1,8 @@
-export PAGER=less
+if [ `which most > /dev/null` ]; then
+    export PAGER=most
+else
+    export PAGER=less
+fi
 export LC_CTYPE=en_US.UTF-8
 
 bindkey -e
