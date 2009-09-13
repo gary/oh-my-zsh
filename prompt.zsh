@@ -5,8 +5,6 @@ else
 fi
 export LC_CTYPE=en_US.UTF-8
 
-bindkey -e
-
 # Directory stuff.
 setopt AUTO_NAME_DIRS
 
@@ -17,7 +15,8 @@ setopt AUTO_CD
 setopt MULTIOS
 setopt CDABLEVARS
 
-bindkey -e
+bindkey -v
+bindkey "^R" history-incremental-search-backward
 
 if [[ x$WINDOW != x ]]
 then
