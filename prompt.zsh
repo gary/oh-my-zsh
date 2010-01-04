@@ -1,4 +1,4 @@
-if [ `which most > /dev/null` ]; then
+if [ -e /usr/local/bin/most ]; then
     export PAGER=most
 else
     export PAGER=less
