@@ -17,7 +17,7 @@ do
     alias cdu$n="cd $parentdir"
 done
 
-if [ -e ~/.irb ]; then alias irb='cd ~/.irb && gem exec irb'; fi
+if [ -e ~/.irb ]; then alias irb='(cd ~/.irb && bundle exec irb)'; fi
 alias sc='ruby script/console'
 alias sd='ruby script/server --debugger'
 alias ss='thin --stats "/thin/stats" start'
